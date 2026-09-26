@@ -509,7 +509,7 @@ main .appoinment{
     background-color:  rgb(30, 65, 90); 
     color: rgb(248, 252, 255);
      
-    border-radius: 10px;
+    
     text-align: center;
     margin-top: 15px;
 
@@ -551,10 +551,12 @@ main .appoinment{
       button
     {
         width: 90%;
-        
-
 
     }
+    button{
+        height: fit-content;
+    }
+    
 
 
     section.doctors{
