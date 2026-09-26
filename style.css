@@ -1,0 +1,587 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    background-color: rgb(235, 245, 250);
+    color: rgb(25, 60, 75);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+img.logo{
+    width: 60px;
+    border-radius: 30px;
+    transition: 3s;
+}
+img.logo:hover{
+     transform: rotate(10deg) scale(1.04);
+    
+}
+
+
+
+
+ul.nav{
+    list-style-type: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0;
+    display: flex;
+     
+    align-items: center;
+    gap: 20px;
+}
+
+nav{
+    
+     background-color: rgb(55, 120, 150);
+     border: none;
+     border-radius: 10px;
+
+      
+     
+
+}
+nav a {
+    text-decoration: none;
+    color: rgb(248, 252, 255);
+}
+nav a:hover{
+    color: rgb(25, 60, 75);
+}
+
+
+
+
+div.book-button button{
+    background-color: rgb(25, 60, 75);
+    color: rgb(248, 252, 255);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+}
+div.book-button button:hover{
+        background-color: rgb(55, 120, 150);
+
+}
+
+
+
+
+/* ---------------------Home--------------------------- */
+
+section.hero{
+    padding: 50px 30px;
+    text-align:center ;
+}
+
+
+section.hero h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: rgb(25, 60, 75);
+}
+
+section.hero p{
+    font-size: 25px;
+    margin-left:  auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+section.hero img{
+    width: 500px;
+    border-radius: 50px;
+    display: block;
+    margin: auto;
+
+}
+  
+
+
+
+
+
+/* --------------------------------about us---------------------------------- */
+section.about{
+    padding: 30px;
+}
+
+section.about h2{
+    font-size: 30px;
+}
+
+section.about p{
+    font-size: 25px;
+    max-width: 800px;
+    
+}
+
+.about ul{
+    display: flex;
+    gap: 20px;
+}
+
+.about li{
+    background-color: rgb(220, 238, 246) ;
+    border:0.5px solid  rgb(25, 60, 75) ;
+    font-size: 25px;
+    margin-bottom: 25px;
+    
+    
+
+
+}
+
+
+
+
+
+/* --------------------------------services------------------------------------------------ */
+section.services{
+    padding:20px;
+}
+
+section.services h2{
+    font-size: 40px;
+
+
+}
+
+
+section.services dl{
+    background-color: rgb(220, 238, 246) ;
+    border-radius: 5px;
+
+
+}
+section.services dt{
+    font-size: 30px;
+   background-color:rgb(248,252,255);
+   width: fit-content;
+   border-radius: 10px;
+   margin-bottom: 10px;
+   margin-top:10px ;
+   box-shadow: 2px 3px  8px rgba(25, 60, 75, 0.2);
+}
+
+section.services dd{
+    font-size:20px ;
+    color: rgb(45, 75, 90);
+    line-height: 1.6;
+
+}
+
+
+
+
+
+
+/* -----------------------------------------------doctors------------------------------------------------------- */
+section.doctors{
+    padding: 20px;
+    display: grid;
+   grid-template-areas:
+   "first first first "
+   "dahmed dsara domar"
+   
+
+   ;
+
+    
+}
+
+ 
+section.doctors title{
+    grid-area:first ;
+}
+
+
+.dahmed{
+    grid-area: dahmed;
+    background-color: rgb(220, 238, 246);
+    border:rgb(55, 120, 150) ;
+    color: rgb(25, 60, 75);
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 3px  8px rgba(25, 60, 75, 0.2);
+    transition: transform 0.3s;
+}
+.dahmed h3,p{
+    color:rgb(25, 60, 75);
+}
+.dahmed h4{
+    color: rgb(55, 120, 150);
+}
+.dsara{
+    grid-area: dsara;
+    background-color: rgb(220, 238, 246);
+    border:rgb(55, 120, 150) ;
+    color: rgb(25, 60, 75);
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 3px  8px rgba(25, 60, 75, 0.2);
+    transition: transform 0.3s;
+
+}
+.dsara h3,p{
+    color:rgb(25, 60, 75);
+}
+.dsara h4{
+    color:rgb(55, 120, 150);
+}
+
+.domar{
+    grid-area:domar ;
+    background-color: rgb(220, 238, 246);
+    border:rgb(55, 120, 150) ;
+    color: rgb(25, 60, 75);
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 3px  8px rgba(25, 60, 75, 0.2);
+    transition: transform 0.3s;
+
+}
+.domar h3,p{
+    color:rgb(25, 60, 75);
+}
+
+.domar h4{
+    color: rgb(55, 120, 150);
+}
+.doctors article img{
+    width: 230px;
+    height:200px ;
+
+}
+
+
+
+.dahmed:hover,
+.domar:hover,
+.dsara:hover{
+     
+    transform: translateY(-6px);
+    
+}
+
+
+
+
+/* -------------------------------contact us ---------------------------------------- */
+section.contact{
+    padding: 20px ;
+    width: 500px;
+    background-color:rgb(248, 252, 255) ;
+    color: rgb(25, 60, 75);
+    
+    box-shadow:2px 3px 8px rgba(25, 60, 75, 0.3) ;
+    border-radius: 15px ;
+    
+   
+
+}
+.contact h2{
+    font-size: 35px;
+ }
+input,textarea,select,button{
+    background-color: rgb(235, 245, 250);
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    border: none;
+    transition: transform 2s;
+
+}
+button{
+    border-radius: 25px;
+    height: 50px;
+}
+label{
+    font-size: 25px;
+}
+input:focus,
+textarea:focus,
+select:focus,
+button:focus{
+     
+    background-color: rgb(220, 238, 246);
+    transform: translateY(-6px);
+    scale: 1.02;
+    border: none;
+
+
+}
+button:hover{
+     background-color: rgb(220, 238, 246)  ;
+      scale: 1.03;
+      cursor:pointer ;
+      
+
+
+}
+.contact form{
+    display: flex;
+     flex-direction: column;
+    align-items: center;
+
+    
+    
+
+}
+
+   
+
+
+.contact h2{
+    font-size: 35px;
+ }
+input,textarea,select,button{
+    width: 400px;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+.contact form{
+    display: flex;
+     flex-direction: column;
+    align-items: center;
+
+
+}
+main .contact{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: auto ;
+     margin-top: 30px;
+
+
+}
+
+ 
+
+
+/* ------------------------------------------qustions-------------------------------------------- */
+main.questions{
+     padding: 20px;
+
+}
+.questions h2 {
+    font-size: 35px;
+}
+.questions ul{
+    list-style-type: none;
+}
+.questions details{
+    width: fit-content;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(220, 238, 246);
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 2px 3px 10px ;
+    
+
+}
+.questions summary{
+    font-size: 25px;
+    margin: 5px;
+    color: rgb(25, 90, 120);
+}
+
+.questions details:hover{
+    cursor: pointer;
+
+}
+
+
+
+
+
+/* ------------------------appoinment---------------------------------------------------------- */
+section.appoinment{
+    padding: 20px ;
+    width: 500px;
+    background-color:rgb(248, 252, 255) ;
+    color: rgb(25, 60, 75);
+    
+    box-shadow:2px 3px 8px rgba(25, 60, 75, 0.3) ;
+    border-radius: 15px ;
+    
+   
+
+}
+.appoinment h2{
+    font-size: 35px;
+ }
+.appoinment input,
+.appoinment textarea,
+.appoinment select,
+.appoinment button{
+    background-color: rgb(197, 209, 215);
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    border: none;
+    transition: transform 2s;
+
+}
+.appoinment button{
+    border-radius: 25px;
+    height: 50px;
+}
+.appoinment label{
+    font-size: 25px;
+}
+.appoinment input:focus,
+.appoinment textarea:focus,
+.appoinment select:focus,
+.appoinment button:focus{
+     
+    background-color: rgb(220, 238, 246);
+    transform: translateY(-6px);
+    scale: 1.02;
+    border: none;
+
+
+}
+.appoinment button:hover{
+     background-color: rgb(220, 238, 246)  ;
+      scale: 1.03;
+      cursor:pointer ;
+      letter-spacing: 1px;
+      
+
+
+}
+.appoinment form{
+    display: flex;
+     flex-direction: column;
+    align-items: center;
+
+    
+    
+
+}
+
+   
+
+
+.appoinment h2{
+    font-size: 35px;
+ }
+input,textarea,select,button{
+    width: 400px;
+    padding: 5px;
+    border-radius: 10px;
+}
+    
+.appoinment form{
+    display: flex;
+     flex-direction: column;
+    align-items: center;
+
+
+}
+main .appoinment{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: auto ;
+     margin-top: 30px;
+
+
+}
+
+
+
+
+/* --------------------------------------footer------------------------------------------------------------- */
+
+.foot  {
+    padding: 20px  10px  ;
+    background-color:  rgb(30, 65, 90); 
+    color: rgb(248, 252, 255);
+     
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 15px;
+
+
+}
+.foot p{
+    color: rgb(248, 252, 255);
+}
+.foot a{
+    color: rgb(248, 249, 249);
+}
+.foot a:hover{
+    color: rgb(141, 149, 153);
+}
+.foot ul{
+     list-style-type: none;
+}
+
+
+
+
+
+
+/* ----------------------------------------------responsive-------------------------------------------------------------------------------- */
+@media(max-width: 600px){
+    section.hero img {
+    width: 100%;
+}
+
+    .contact{
+        width: 100%;
+    }
+    .appoinment{
+         width: 100%;
+    }
+      input,
+      textarea,
+     select,
+      button
+    {
+        width: 100%;
+
+
+    }
+
+
+    section.doctors{
+        grid-template-areas:
+        "first"
+        "dahmed"
+        "dsara"
+        "domar"
+        
+        
+        
+        ;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+     ul.nav{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .about ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+
