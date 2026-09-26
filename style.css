@@ -63,6 +63,7 @@ div.book-button button{
 }
 div.book-button button:hover{
         background-color: rgb(55, 120, 150);
+        letter-spacing: 2px;
 
 }
 
@@ -542,14 +543,15 @@ main .appoinment{
         width: 100%;
     }
     .appoinment{
-         width: 100%;
+         width: 90%;
     }
       input,
       textarea,
      select,
       button
     {
-        width: 100%;
+        width: 90%;
+        
 
 
     }
@@ -562,18 +564,18 @@ main .appoinment{
         "dsara"
         "domar"
         
-        
-        
         ;
     }
 
     header{
         display: flex;
         flex-direction: column;
+        width: auto auto;
     }
      ul.nav{
         display: flex;
         flex-direction: column;
+        
 
     }
     .about ul {
